@@ -6,6 +6,7 @@
 - Added website language switching with localized prompt recipes and documentation links.
 - Replaced the original vector icon with an Image Gen generated project icon.
 - Rebuilt the project website with a new light system-index design language.
+- Redesigned the project website as a premium skill-atelier landing page.
 
 ## 1.0.0 - 2026-05-01
 

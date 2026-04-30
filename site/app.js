@@ -1,16 +1,17 @@
 const translations = {
   en: {
     "nav.modules": "Modules",
+    "nav.capabilities": "Capabilities",
     "nav.install": "Install",
     "nav.docs": "Docs",
     "nav.recipes": "Recipes",
-    "hero.eyebrow": "Codex skill orchestration pack",
-    "hero.title": "One universal builder for web apps, Apple apps, and product-grade UI.",
+    "hero.eyebrow": "Codex Skill Atelier",
+    "hero.title": "A refined command center for building across web, Apple, and product UI.",
     "hero.lede":
-      "Install a complete skill system for fullstack web work, SwiftUI apps, motion, image assets, browser QA, security, Figma, observability, and deployment.",
+      "One bilingual, composable skill pack that lets Codex move from brand-grade interface design to backend contracts, SwiftUI apps, generated imagery, verification, and deployment.",
     "hero.copy": "Copy install",
     "hero.repo": "View repository",
-    "install.label": "Install profile",
+    "install.label": "Install the complete suite",
     "install.profile": "Complete pack",
     "map.web": "Web Fullstack",
     "map.apple": "Apple Apps",
@@ -21,7 +22,7 @@ const translations = {
     "metrics.orchestrators": "main orchestrators",
     "metrics.license": "repo license",
     "modules.eyebrow": "Composable by design",
-    "modules.title": "Use the whole system or only the exact module you need.",
+    "modules.title": "Choose the full atelier or assemble only the craft you need.",
     "modules.web.title": "Web Fullstack",
     "modules.web.body":
       "Next.js, Tailwind, React state, Node.js, FastAPI, ASP.NET, API contracts, auth, PostgreSQL, SQL tuning, and deploy.",
@@ -35,9 +36,9 @@ const translations = {
     "modules.qa.body":
       "Playwright, screenshot capture, security best practices, Sentry, Vercel, Netlify, Cloudflare, and Render.",
     "profiles.eyebrow": "Install profiles",
-    "profiles.title": "Install only the surface area you want.",
+    "profiles.title": "A complete suite, with precise smaller cuts when the work is narrow.",
     "profiles.body":
-      "Profiles keep the setup lean for narrow workflows, while `all` gives Codex the complete cross-platform builder pack.",
+      "Install everything for cross-platform product work, or select a profile for web, Apple, creative, QA, or deployment tasks.",
     "profiles.all": "complete suite",
     "profiles.web": "frontend and backend",
     "profiles.apple": "iOS and macOS",
@@ -62,16 +63,17 @@ const translations = {
   },
   zh: {
     "nav.modules": "模块",
+    "nav.capabilities": "能力",
     "nav.install": "安装",
     "nav.docs": "文档",
     "nav.recipes": "调用模板",
-    "hero.eyebrow": "Codex 技能编排包",
-    "hero.title": "通用构建器：网页、Apple 应用与产品级 UI。",
+    "hero.eyebrow": "Codex 技能工坊",
+    "hero.title": "面向 Web、Apple 与产品级 UI 的高级构建中枢。",
     "hero.lede":
-      "一次安装完整技能系统：全栈 Web、SwiftUI、动效、图片资产、浏览器 QA、安全、Figma、监控和部署都可以组合调用。",
+      "一套中英文、可组合的技能包，让 Codex 从高级界面设计一路延伸到后端契约、SwiftUI 应用、图片生成、验证和部署。",
     "hero.copy": "复制安装命令",
     "hero.repo": "查看仓库",
-    "install.label": "安装组合",
+    "install.label": "安装完整套件",
     "install.profile": "完整套件",
     "map.web": "网页全栈",
     "map.apple": "Apple 应用",
@@ -82,7 +84,7 @@ const translations = {
     "metrics.orchestrators": "主编排技能",
     "metrics.license": "仓库协议",
     "modules.eyebrow": "为组合而生",
-    "modules.title": "可以一键调用全套，也可以只调用你需要的模块。",
+    "modules.title": "可以调用完整工坊，也可以只组合当前需要的能力。",
     "modules.web.title": "网页全栈",
     "modules.web.body":
       "覆盖 Next.js、Tailwind、React 状态、Node.js、FastAPI、ASP.NET、API 契约、认证、PostgreSQL、SQL 优化和部署。",
@@ -96,9 +98,9 @@ const translations = {
     "modules.qa.body":
       "覆盖 Playwright、截图、安全最佳实践、Sentry、Vercel、Netlify、Cloudflare 和 Render。",
     "profiles.eyebrow": "安装组合",
-    "profiles.title": "只安装当前工作真正需要的能力。",
+    "profiles.title": "完整套件，也支持按任务精确安装小组合。",
     "profiles.body":
-      "`all` 会安装完整跨平台技能包；也可以按 web、apple、creative、qa、deploy 等组合精简安装。",
+      "跨平台产品工作可以安装全部能力；也可以只选择 web、apple、creative、qa 或 deploy。",
     "profiles.all": "完整套件",
     "profiles.web": "前端和后端",
     "profiles.apple": "iOS 和 macOS",
