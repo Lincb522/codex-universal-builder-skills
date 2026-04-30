@@ -5,7 +5,7 @@
 - Added bilingual English and Simplified Chinese documentation.
 - Added website language switching with localized prompt recipes and documentation links.
 - Replaced the original vector icon with an Image Gen generated project icon.
-- Redesigned the project website with a light product-style visual system.
+- Rebuilt the project website with a new light system-index design language.
 
 ## 1.0.0 - 2026-05-01
 

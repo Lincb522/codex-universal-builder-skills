@@ -22,6 +22,7 @@
         <nav aria-label="Primary navigation">
           <a href="#modules" data-i18n="nav.modules">Modules</a>
           <a href="#install" data-i18n="nav.install">Install</a>
+          <a href="#docs" data-i18n="nav.docs">Docs</a>
           <a href="#recipes" data-i18n="nav.recipes">Recipes</a>
           <a href="https://github.com/Lincb522/codex-universal-builder-skills">GitHub</a>
         </nav>
@@ -30,38 +31,77 @@
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Codex skill orchestration pack</p>
-          <h1 data-i18n="hero.title">One universal builder for web apps, Apple apps, and product-grade UI.</h1>
-          <p class="lede" data-i18n="hero.lede">
-            Install a complete skill system for fullstack web work, SwiftUI apps, motion,
-            image assets, browser QA, security, Figma, observability, and deployment.
-          </p>
-          <div class="hero-actions" id="install">
-            <button
-              class="copy-button"
-              data-copy="git clone https://github.com/Lincb522/codex-universal-builder-skills.git && cd codex-universal-builder-skills && ./scripts/install.sh all"
-              data-i18n="hero.copy"
-            >
-              Copy install
-            </button>
-            <a
-              class="secondary-action"
-              href="https://github.com/Lincb522/codex-universal-builder-skills"
-              data-i18n="hero.repo"
-            >
-              View repository
-            </a>
+      <section class="cover">
+        <div class="cover-grid">
+          <div class="cover-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Codex skill orchestration pack</p>
+            <h1 data-i18n="hero.title">One universal builder for web apps, Apple apps, and product-grade UI.</h1>
+            <p class="lede" data-i18n="hero.lede">
+              Install a complete skill system for fullstack web work, SwiftUI apps, motion,
+              image assets, browser QA, security, Figma, observability, and deployment.
+            </p>
+            <div class="hero-actions">
+              <button
+                class="copy-button"
+                data-copy="git clone https://github.com/Lincb522/codex-universal-builder-skills.git && cd codex-universal-builder-skills && ./scripts/install.sh all"
+                data-i18n="hero.copy"
+              >
+                Copy install
+              </button>
+              <a
+                class="secondary-action"
+                href="https://github.com/Lincb522/codex-universal-builder-skills"
+                data-i18n="hero.repo"
+              >
+                View repository
+              </a>
+            </div>
           </div>
+
+          <aside class="install-sheet" id="install" aria-label="Install command">
+            <div class="sheet-title">
+              <img src="./assets/icon.png" alt="" width="56" height="56">
+              <div>
+                <span data-i18n="install.label">Install profile</span>
+                <strong data-i18n="install.profile">Complete pack</strong>
+              </div>
+            </div>
+            <div class="install-command">
+              <code>git clone https://github.com/Lincb522/codex-universal-builder-skills.git</code>
+              <code>cd codex-universal-builder-skills</code>
+              <code>./scripts/install.sh all</code>
+            </div>
+            <div class="profile-pills" aria-label="Install profiles">
+              <span>web</span>
+              <span>apple</span>
+              <span>creative</span>
+              <span>qa</span>
+              <span>deploy</span>
+            </div>
+          </aside>
         </div>
-        <div class="hero-visual" aria-label="Skill pack visual summary">
-          <img src="./assets/icon.png" alt="Project icon" width="220" height="220">
-          <div class="command-stack">
-            <code>Use $web-fullstack-app ...</code>
-            <code>Use $swift-apple-app ...</code>
-            <code>Use $anthropic-frontend-design + $playwright ...</code>
-          </div>
+
+        <div class="quick-map" aria-label="Core skill surfaces">
+          <a href="#modules">
+            <span>01</span>
+            <strong data-i18n="map.web">Web Fullstack</strong>
+            <small>$web-fullstack-app</small>
+          </a>
+          <a href="#modules">
+            <span>02</span>
+            <strong data-i18n="map.apple">Apple Apps</strong>
+            <small>$swift-apple-app</small>
+          </a>
+          <a href="#modules">
+            <span>03</span>
+            <strong data-i18n="map.design">Design Systems</strong>
+            <small>$ui-ux-pro-max</small>
+          </a>
+          <a href="#recipes">
+            <span>04</span>
+            <strong data-i18n="map.verify">QA And Launch</strong>
+            <small>$playwright</small>
+          </a>
         </div>
       </section>
 
@@ -84,37 +124,49 @@
         </div>
       </section>
 
-      <section class="section" id="modules">
+      <section class="section lanes" id="modules">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="modules.eyebrow">Composable by design</p>
           <h2 data-i18n="modules.title">Use the whole system or only the exact module you need.</h2>
         </div>
-        <div class="module-grid">
-          <article>
-            <h3 data-i18n="modules.web.title">Web Fullstack</h3>
-            <p data-i18n="modules.web.body">Next.js, Tailwind, React state, Node.js, FastAPI, ASP.NET, API contracts, auth, PostgreSQL, SQL tuning, and deploy.</p>
+        <div class="lane-list">
+          <article class="lane">
+            <span class="lane-index">01</span>
+            <div>
+              <h3 data-i18n="modules.web.title">Web Fullstack</h3>
+              <p data-i18n="modules.web.body">Next.js, Tailwind, React state, Node.js, FastAPI, ASP.NET, API contracts, auth, PostgreSQL, SQL tuning, and deploy.</p>
+            </div>
             <code>$web-fullstack-app</code>
           </article>
-          <article>
-            <h3 data-i18n="modules.apple.title">Apple Apps</h3>
-            <p data-i18n="modules.apple.body">Universal SwiftUI app creation, iOS/macOS patterns, Swift style, animation, performance audits, and verification.</p>
+          <article class="lane">
+            <span class="lane-index">02</span>
+            <div>
+              <h3 data-i18n="modules.apple.title">Apple Apps</h3>
+              <p data-i18n="modules.apple.body">Universal SwiftUI app creation, iOS/macOS patterns, Swift style, animation, performance audits, and verification.</p>
+            </div>
             <code>$swift-apple-app</code>
           </article>
-          <article>
-            <h3 data-i18n="modules.design.title">Design And Motion</h3>
-            <p data-i18n="modules.design.body">UIProMax, Anthropic frontend design, Deno design tooling, interaction design, animation, and image assets.</p>
+          <article class="lane">
+            <span class="lane-index">03</span>
+            <div>
+              <h3 data-i18n="modules.design.title">Design And Motion</h3>
+              <p data-i18n="modules.design.body">UIProMax, Anthropic frontend design, Deno design tooling, interaction design, animation, and image assets.</p>
+            </div>
             <code>$anthropic-frontend-design</code>
           </article>
-          <article>
-            <h3 data-i18n="modules.qa.title">QA And Launch</h3>
-            <p data-i18n="modules.qa.body">Playwright, screenshot capture, security best practices, Sentry, Vercel, Netlify, Cloudflare, and Render.</p>
+          <article class="lane">
+            <span class="lane-index">04</span>
+            <div>
+              <h3 data-i18n="modules.qa.title">QA And Launch</h3>
+              <p data-i18n="modules.qa.body">Playwright, screenshot capture, security best practices, Sentry, Vercel, Netlify, Cloudflare, and Render.</p>
+            </div>
             <code>$playwright</code>
           </article>
         </div>
       </section>
 
-      <section class="section split">
-        <div>
+      <section class="section install-lab">
+        <div class="section-heading">
           <p class="eyebrow" data-i18n="profiles.eyebrow">Install profiles</p>
           <h2 data-i18n="profiles.title">Install only the surface area you want.</h2>
           <p data-i18n="profiles.body">
@@ -122,18 +174,28 @@
             complete cross-platform builder pack.
           </p>
         </div>
-        <div class="terminal">
-          <button class="copy-mini" data-copy="./scripts/install.sh all" data-i18n="copy.short">Copy</button>
-          <pre><code>./scripts/install.sh all
+        <div class="profile-board">
+          <div class="profile-list">
+            <span><strong>all</strong><small data-i18n="profiles.all">complete suite</small></span>
+            <span><strong>web</strong><small data-i18n="profiles.web">frontend and backend</small></span>
+            <span><strong>apple</strong><small data-i18n="profiles.apple">iOS and macOS</small></span>
+            <span><strong>creative</strong><small data-i18n="profiles.creative">design and motion</small></span>
+            <span><strong>qa</strong><small data-i18n="profiles.qa">browser and security</small></span>
+            <span><strong>deploy</strong><small data-i18n="profiles.deploy">launch targets</small></span>
+          </div>
+          <div class="terminal">
+            <button class="copy-mini" data-copy="./scripts/install.sh all" data-i18n="copy.short">Copy</button>
+            <pre><code>./scripts/install.sh all
 ./scripts/install.sh web
 ./scripts/install.sh apple
 ./scripts/install.sh creative
 ./scripts/install.sh qa
 ./scripts/install.sh deploy</code></pre>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="docs">
+      <section class="section docs-section" id="docs">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="docs.eyebrow">Bilingual documentation</p>
           <h2 data-i18n="docs.title">Read the same guide in English or Chinese.</h2>
@@ -150,7 +212,7 @@
         </div>
       </section>
 
-      <section class="section" id="recipes">
+      <section class="section recipes-section" id="recipes">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="recipes.eyebrow">Prompt recipes</p>
           <h2 data-i18n="recipes.title">Call skills directly from your Codex prompt.</h2>
