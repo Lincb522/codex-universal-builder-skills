@@ -125,6 +125,8 @@ Then open:
 http://localhost:8080
 ```
 
+The static website source lives in `site/` and is ready for GitHub Pages through `.github/workflows/pages.yml`.
+
 ## Validate
 
 ```bash
