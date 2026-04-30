@@ -1,14 +1,20 @@
 :root {
-  color-scheme: dark;
-  --bg: #07111f;
-  --ink: #f4fbf8;
-  --muted: #a8b7bd;
-  --line: rgba(255, 255, 255, 0.15);
-  --panel: rgba(255, 255, 255, 0.075);
-  --accent: #8ed6ff;
-  --warm: #ffcf70;
-  --mint: #d9ffe7;
-  --shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+  color-scheme: light;
+  --bg: #f5f9fb;
+  --bg-wash: #e8f4f7;
+  --surface: #ffffff;
+  --surface-soft: #edf6f8;
+  --ink: #152530;
+  --muted: #5c6d78;
+  --line: rgba(29, 61, 75, 0.16);
+  --line-strong: rgba(29, 61, 75, 0.24);
+  --primary: #155e75;
+  --primary-strong: #0e3f55;
+  --accent: #0fa08b;
+  --blue: #3974d8;
+  --warm: #bd6b16;
+  --mint: #dff8ee;
+  --shadow: 0 28px 70px rgba(35, 78, 98, 0.14);
 }
 
 * {
@@ -23,11 +29,12 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    radial-gradient(circle at 50% 0%, rgba(142, 214, 255, 0.18), transparent 36rem),
+    linear-gradient(90deg, rgba(21, 94, 117, 0.055) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(21, 94, 117, 0.045) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(15, 160, 139, 0.14), transparent 30rem),
+    linear-gradient(315deg, rgba(57, 116, 216, 0.1), transparent 36rem),
     var(--bg);
-  background-size: 72px 72px, 72px 72px, auto, auto;
+  background-size: 72px 72px, 72px 72px, auto, auto, auto;
   color: var(--ink);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0;
@@ -53,7 +60,7 @@ a {
   min-height: 72px;
   padding: 16px clamp(18px, 4vw, 48px);
   border-bottom: 1px solid var(--line);
-  background: rgba(7, 17, 31, 0.82);
+  background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(18px);
 }
 
@@ -67,11 +74,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-weight: 760;
+  font-weight: 780;
 }
 
 .brand img {
   border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(21, 94, 117, 0.2);
 }
 
 nav {
@@ -84,25 +92,26 @@ nav {
 
 nav a:hover,
 nav a:focus-visible {
-  color: var(--ink);
+  color: var(--primary);
 }
 
 .language-toggle {
   min-width: 58px;
   min-height: 36px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--ink);
+  background: var(--surface);
+  color: var(--primary-strong);
   font: inherit;
   font-size: 0.88rem;
-  font-weight: 720;
+  font-weight: 760;
   cursor: pointer;
+  box-shadow: 0 8px 24px rgba(35, 78, 98, 0.08);
 }
 
 .language-toggle:hover,
 .language-toggle:focus-visible {
-  border-color: rgba(142, 214, 255, 0.65);
+  border-color: rgba(15, 160, 139, 0.7);
 }
 
 .hero {
@@ -110,7 +119,7 @@ nav a:focus-visible {
   grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.74fr);
   align-items: center;
   gap: clamp(36px, 6vw, 96px);
-  padding: clamp(42px, 6vw, 80px) clamp(20px, 6vw, 80px) clamp(34px, 5vw, 60px);
+  padding: clamp(46px, 6vw, 86px) clamp(20px, 6vw, 80px) clamp(38px, 5vw, 66px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -122,7 +131,7 @@ nav a:focus-visible {
   margin: 0 0 18px;
   color: var(--warm);
   font-size: 0.78rem;
-  font-weight: 760;
+  font-weight: 820;
   text-transform: uppercase;
 }
 
@@ -136,21 +145,21 @@ p {
 h1 {
   max-width: 880px;
   margin-bottom: 24px;
-  font-size: clamp(2.9rem, 6.35vw, 6.5rem);
-  line-height: 0.95;
+  font-size: clamp(2.85rem, 6.1vw, 6.2rem);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
 html[lang="zh-CN"] h1 {
   max-width: 780px;
-  font-size: clamp(2.55rem, 5.2vw, 5.5rem);
-  line-height: 1.04;
+  font-size: clamp(2.5rem, 5vw, 5.2rem);
+  line-height: 1.06;
 }
 
 h2 {
   max-width: 760px;
   margin-bottom: 18px;
-  font-size: clamp(2rem, 4vw, 4.6rem);
+  font-size: clamp(2rem, 3.8vw, 4.3rem);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -179,26 +188,32 @@ h3 {
 .recipe-list button,
 .copy-mini {
   min-height: 44px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: 8px;
   color: var(--ink);
   font: inherit;
-  font-weight: 720;
+  font-weight: 760;
   cursor: pointer;
 }
 
 .copy-button {
   padding: 0 22px;
   border-color: transparent;
-  background: var(--mint);
-  color: #08131f;
+  background: var(--primary-strong);
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(14, 63, 85, 0.2);
+}
+
+.copy-button:hover,
+.copy-button:focus-visible {
+  background: var(--primary);
 }
 
 .secondary-action {
   display: inline-grid;
   place-items: center;
   padding: 0 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--surface);
 }
 
 .hero-visual {
@@ -215,8 +230,10 @@ h3 {
   inset: 10%;
   border: 1px solid var(--line);
   background:
-    linear-gradient(135deg, rgba(142, 214, 255, 0.16), transparent 34%),
-    linear-gradient(315deg, rgba(255, 207, 112, 0.14), transparent 36%);
+    linear-gradient(135deg, rgba(15, 160, 139, 0.14), transparent 38%),
+    linear-gradient(315deg, rgba(57, 116, 216, 0.12), transparent 42%),
+    rgba(255, 255, 255, 0.58);
+  box-shadow: var(--shadow);
   transform: skewY(-5deg);
 }
 
@@ -228,7 +245,7 @@ h3 {
   width: min(56vw, 240px);
   height: auto;
   border-radius: 24px;
-  filter: drop-shadow(0 28px 54px rgba(0, 0, 0, 0.42));
+  box-shadow: 0 26px 52px rgba(42, 83, 103, 0.22);
 }
 
 .command-stack {
@@ -245,13 +262,13 @@ code {
 .terminal {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(2, 9, 14, 0.72);
+  background: rgba(255, 255, 255, 0.88);
   box-shadow: var(--shadow);
 }
 
 .command-stack code {
   padding: 15px 16px;
-  color: var(--mint);
+  color: var(--primary-strong);
   font-size: 0.86rem;
   white-space: nowrap;
   overflow: hidden;
@@ -262,6 +279,7 @@ code {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.54);
 }
 
 .metrics div {
@@ -277,7 +295,7 @@ code {
 .metrics strong {
   display: block;
   margin-bottom: 8px;
-  color: var(--mint);
+  color: var(--primary);
   font-size: clamp(2rem, 4vw, 3.8rem);
   line-height: 1;
 }
@@ -291,6 +309,14 @@ code {
   border-bottom: 1px solid var(--line);
 }
 
+.section:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.section:nth-of-type(even) {
+  background: rgba(237, 246, 248, 0.58);
+}
+
 .section-heading {
   margin-bottom: 34px;
 }
@@ -299,14 +325,17 @@ code {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  background: var(--line);
+  overflow: hidden;
   border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+  box-shadow: 0 18px 52px rgba(35, 78, 98, 0.08);
 }
 
 .module-grid article {
   min-height: 250px;
   padding: 26px;
-  background: rgba(7, 17, 31, 0.94);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .module-grid p,
@@ -319,7 +348,7 @@ code {
 .module-grid code {
   display: inline-flex;
   margin-top: 16px;
-  color: var(--warm);
+  color: var(--primary);
   font-size: 0.86rem;
 }
 
@@ -338,7 +367,7 @@ code {
 
 .terminal pre {
   margin: 0;
-  color: var(--mint);
+  color: var(--primary-strong);
   line-height: 1.75;
 }
 
@@ -348,7 +377,8 @@ code {
   right: 14px;
   min-height: 34px;
   padding: 0 12px;
-  background: rgba(255, 255, 255, 0.09);
+  background: var(--surface-soft);
+  color: var(--primary-strong);
 }
 
 .recipe-list {
@@ -370,17 +400,19 @@ code {
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel);
+  background: var(--surface);
+  box-shadow: 0 18px 52px rgba(35, 78, 98, 0.08);
 }
 
 .docs-grid a:hover,
 .docs-grid a:focus-visible {
-  border-color: rgba(142, 214, 255, 0.65);
+  border-color: rgba(15, 160, 139, 0.7);
 }
 
 .docs-grid span {
+  color: var(--primary-strong);
   font-size: 1.08rem;
-  font-weight: 760;
+  font-weight: 780;
 }
 
 .docs-grid small {
@@ -389,8 +421,9 @@ code {
 
 .recipe-list button {
   padding: 28px 22px;
-  background: var(--panel);
+  background: var(--surface);
   text-align: left;
+  box-shadow: 0 14px 40px rgba(35, 78, 98, 0.08);
 }
 
 .recipe-list button:hover,
@@ -399,7 +432,7 @@ code {
 .secondary-action:focus-visible,
 .copy-mini:hover,
 .copy-mini:focus-visible {
-  border-color: rgba(142, 214, 255, 0.65);
+  border-color: rgba(15, 160, 139, 0.7);
 }
 
 .footer {
@@ -408,6 +441,7 @@ code {
   gap: 20px;
   justify-content: space-between;
   padding: 28px clamp(20px, 6vw, 80px);
+  background: #ffffff;
   color: var(--muted);
 }
 
@@ -457,13 +491,13 @@ code {
   }
 
   h1 {
-    font-size: clamp(2.72rem, 13vw, 3.35rem);
-    line-height: 0.96;
+    font-size: clamp(2.56rem, 12vw, 3.18rem);
+    line-height: 0.98;
   }
 
   html[lang="zh-CN"] h1 {
-    font-size: clamp(2.34rem, 11vw, 3rem);
-    line-height: 1.08;
+    font-size: clamp(2.18rem, 10vw, 2.8rem);
+    line-height: 1.1;
   }
 
   .lede {
