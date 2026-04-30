@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/project-icon.svg" width="128" height="128" alt="Codex Universal Builder Skills icon">
+  <img src="assets/project-icon.png" width="128" height="128" alt="Codex Universal Builder Skills icon">
 </p>
 
 <h1 align="center">Codex Universal Builder Skills</h1>
@@ -13,6 +13,10 @@
   <img alt="Codex skills" src="https://img.shields.io/badge/Codex-skills-2b7fff">
   <img alt="Deno site" src="https://img.shields.io/badge/site-Deno-111827">
   <img alt="Web and Apple" src="https://img.shields.io/badge/platform-Web%20%2B%20Apple-f6b84b">
+</p>
+
+<p align="center">
+  English | <a href="./README.zh-CN.md">简体中文</a>
 </p>
 
 ## What This Is
@@ -153,6 +157,7 @@ python3 scripts/validate_skills.py
 - [Update guide](docs/update.md)
 - [Architecture](docs/architecture.md)
 - [License and sources](docs/license-and-sources.md)
+- [中文文档](README.zh-CN.md)
 
 ## Updating This Pack
 

@@ -5,46 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Codex Universal Builder Skills: composable web, Apple, UI, backend, QA, security, and deploy skills."
+      content="Codex Universal Builder Skills: bilingual composable web, Apple, UI, backend, QA, security, and deploy skills."
     >
     <title>Codex Universal Builder Skills</title>
-    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+    <link rel="alternate icon" href="./assets/icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="#top" aria-label="Codex Universal Builder Skills home">
-        <img src="./assets/icon.svg" alt="" width="34" height="34">
+        <img src="./assets/icon.png" alt="" width="34" height="34">
         <span>Universal Builder Skills</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#modules">Modules</a>
-        <a href="#install">Install</a>
-        <a href="#recipes">Recipes</a>
-        <a href="https://github.com/Lincb522/codex-universal-builder-skills">GitHub</a>
-      </nav>
+      <div class="topbar-actions">
+        <nav aria-label="Primary navigation">
+          <a href="#modules" data-i18n="nav.modules">Modules</a>
+          <a href="#install" data-i18n="nav.install">Install</a>
+          <a href="#recipes" data-i18n="nav.recipes">Recipes</a>
+          <a href="https://github.com/Lincb522/codex-universal-builder-skills">GitHub</a>
+        </nav>
+        <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>中文</button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Codex skill orchestration pack</p>
-          <h1>One universal builder for web apps, Apple apps, and product-grade UI.</h1>
-          <p class="lede">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Codex skill orchestration pack</p>
+          <h1 data-i18n="hero.title">One universal builder for web apps, Apple apps, and product-grade UI.</h1>
+          <p class="lede" data-i18n="hero.lede">
             Install a complete skill system for fullstack web work, SwiftUI apps, motion,
             image assets, browser QA, security, Figma, observability, and deployment.
           </p>
           <div class="hero-actions" id="install">
-            <button class="copy-button" data-copy="git clone https://github.com/Lincb522/codex-universal-builder-skills.git && cd codex-universal-builder-skills && ./scripts/install.sh all">
+            <button
+              class="copy-button"
+              data-copy="git clone https://github.com/Lincb522/codex-universal-builder-skills.git && cd codex-universal-builder-skills && ./scripts/install.sh all"
+              data-i18n="hero.copy"
+            >
               Copy install
             </button>
-            <a class="secondary-action" href="https://github.com/Lincb522/codex-universal-builder-skills">
+            <a
+              class="secondary-action"
+              href="https://github.com/Lincb522/codex-universal-builder-skills"
+              data-i18n="hero.repo"
+            >
               View repository
             </a>
           </div>
         </div>
         <div class="hero-visual" aria-label="Skill pack visual summary">
-          <img src="./assets/icon.svg" alt="Project icon" width="220" height="220">
+          <img src="./assets/icon.png" alt="Project icon" width="220" height="220">
           <div class="command-stack">
             <code>Use $web-fullstack-app ...</code>
             <code>Use $swift-apple-app ...</code>
@@ -56,46 +68,46 @@
       <section class="metrics" aria-label="Pack highlights">
         <div>
           <strong>45+</strong>
-          <span>installable skills</span>
+          <span data-i18n="metrics.skills">installable skills</span>
         </div>
         <div>
           <strong>6</strong>
-          <span>install profiles</span>
+          <span data-i18n="metrics.profiles">install profiles</span>
         </div>
         <div>
           <strong>2</strong>
-          <span>main orchestrators</span>
+          <span data-i18n="metrics.orchestrators">main orchestrators</span>
         </div>
         <div>
           <strong>MIT</strong>
-          <span>repo license</span>
+          <span data-i18n="metrics.license">repo license</span>
         </div>
       </section>
 
       <section class="section" id="modules">
         <div class="section-heading">
-          <p class="eyebrow">Composable by design</p>
-          <h2>Use the whole system or only the exact module you need.</h2>
+          <p class="eyebrow" data-i18n="modules.eyebrow">Composable by design</p>
+          <h2 data-i18n="modules.title">Use the whole system or only the exact module you need.</h2>
         </div>
         <div class="module-grid">
           <article>
-            <h3>Web Fullstack</h3>
-            <p>Next.js, Tailwind, React state, Node.js, FastAPI, ASP.NET, API contracts, auth, PostgreSQL, SQL tuning, and deploy.</p>
+            <h3 data-i18n="modules.web.title">Web Fullstack</h3>
+            <p data-i18n="modules.web.body">Next.js, Tailwind, React state, Node.js, FastAPI, ASP.NET, API contracts, auth, PostgreSQL, SQL tuning, and deploy.</p>
             <code>$web-fullstack-app</code>
           </article>
           <article>
-            <h3>Apple Apps</h3>
-            <p>Universal SwiftUI app creation, iOS/macOS patterns, Swift style, animation, performance audits, and verification.</p>
+            <h3 data-i18n="modules.apple.title">Apple Apps</h3>
+            <p data-i18n="modules.apple.body">Universal SwiftUI app creation, iOS/macOS patterns, Swift style, animation, performance audits, and verification.</p>
             <code>$swift-apple-app</code>
           </article>
           <article>
-            <h3>Design And Motion</h3>
-            <p>UIProMax, Anthropic frontend design, Deno design tooling, interaction design, animation, and image assets.</p>
+            <h3 data-i18n="modules.design.title">Design And Motion</h3>
+            <p data-i18n="modules.design.body">UIProMax, Anthropic frontend design, Deno design tooling, interaction design, animation, and image assets.</p>
             <code>$anthropic-frontend-design</code>
           </article>
           <article>
-            <h3>QA And Launch</h3>
-            <p>Playwright, screenshot capture, security best practices, Sentry, Vercel, Netlify, Cloudflare, and Render.</p>
+            <h3 data-i18n="modules.qa.title">QA And Launch</h3>
+            <p data-i18n="modules.qa.body">Playwright, screenshot capture, security best practices, Sentry, Vercel, Netlify, Cloudflare, and Render.</p>
             <code>$playwright</code>
           </article>
         </div>
@@ -103,15 +115,15 @@
 
       <section class="section split">
         <div>
-          <p class="eyebrow">Install profiles</p>
-          <h2>Install only the surface area you want.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="profiles.eyebrow">Install profiles</p>
+          <h2 data-i18n="profiles.title">Install only the surface area you want.</h2>
+          <p data-i18n="profiles.body">
             Profiles keep the setup lean for narrow workflows, while `all` gives Codex the
             complete cross-platform builder pack.
           </p>
         </div>
         <div class="terminal">
-          <button class="copy-mini" data-copy="./scripts/install.sh all">Copy</button>
+          <button class="copy-mini" data-copy="./scripts/install.sh all" data-i18n="copy.short">Copy</button>
           <pre><code>./scripts/install.sh all
 ./scripts/install.sh web
 ./scripts/install.sh apple
@@ -121,22 +133,59 @@
         </div>
       </section>
 
+      <section class="section" id="docs">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="docs.eyebrow">Bilingual documentation</p>
+          <h2 data-i18n="docs.title">Read the same guide in English or Chinese.</h2>
+        </div>
+        <div class="docs-grid">
+          <a href="https://github.com/Lincb522/codex-universal-builder-skills/blob/main/README.md">
+            <span data-i18n="docs.en.title">English docs</span>
+            <small data-i18n="docs.en.body">README, usage guide, module catalog, update guide, and license notes.</small>
+          </a>
+          <a href="https://github.com/Lincb522/codex-universal-builder-skills/blob/main/README.zh-CN.md">
+            <span data-i18n="docs.zh.title">中文文档</span>
+            <small data-i18n="docs.zh.body">中文 README、完整使用方法、模块目录、更新说明和开源协议说明。</small>
+          </a>
+        </div>
+      </section>
+
       <section class="section" id="recipes">
         <div class="section-heading">
-          <p class="eyebrow">Prompt recipes</p>
-          <h2>Call skills directly from your Codex prompt.</h2>
+          <p class="eyebrow" data-i18n="recipes.eyebrow">Prompt recipes</p>
+          <h2 data-i18n="recipes.title">Call skills directly from your Codex prompt.</h2>
         </div>
         <div class="recipe-list">
-          <button data-copy="Use $web-fullstack-app to build a Next.js dashboard with auth, PostgreSQL, Playwright checks, and Vercel deployment notes.">
+          <button
+            data-copy-en="Use $web-fullstack-app to build a Next.js dashboard with auth, PostgreSQL, Playwright checks, and Vercel deployment notes."
+            data-copy-zh="使用 $web-fullstack-app 创建一个带认证、PostgreSQL、Playwright 检查和 Vercel 部署说明的 Next.js 仪表盘。"
+            data-copy="Use $web-fullstack-app to build a Next.js dashboard with auth, PostgreSQL, Playwright checks, and Vercel deployment notes."
+            data-i18n="recipes.web"
+          >
             Web product
           </button>
-          <button data-copy="Use $swift-apple-app to create a universal SwiftUI app for iOS and macOS with persistence, navigation, animation, and verification.">
+          <button
+            data-copy-en="Use $swift-apple-app to create a universal SwiftUI app for iOS and macOS with persistence, navigation, animation, and verification."
+            data-copy-zh="使用 $swift-apple-app 创建一个 iOS/macOS 通用 SwiftUI 应用，包含持久化、导航、动画和验证步骤。"
+            data-copy="Use $swift-apple-app to create a universal SwiftUI app for iOS and macOS with persistence, navigation, animation, and verification."
+            data-i18n="recipes.apple"
+          >
             Apple app
           </button>
-          <button data-copy="Use $anthropic-frontend-design + $tailwind-design-system + $ui-animation to design a premium landing page.">
+          <button
+            data-copy-en="Use $anthropic-frontend-design + $tailwind-design-system + $ui-animation to design a premium landing page."
+            data-copy-zh="使用 $anthropic-frontend-design + $tailwind-design-system + $ui-animation 设计一个高级感落地页。"
+            data-copy="Use $anthropic-frontend-design + $tailwind-design-system + $ui-animation to design a premium landing page."
+            data-i18n="recipes.landing"
+          >
             Landing page
           </button>
-          <button data-copy="Use $chatgpt-apps + $openai-docs to scaffold a ChatGPT Apps SDK app with MCP server and widget UI.">
+          <button
+            data-copy-en="Use $chatgpt-apps + $openai-docs to scaffold a ChatGPT Apps SDK app with MCP server and widget UI."
+            data-copy-zh="使用 $chatgpt-apps + $openai-docs 搭建一个带 MCP server 和 widget UI 的 ChatGPT Apps SDK 应用。"
+            data-copy="Use $chatgpt-apps + $openai-docs to scaffold a ChatGPT Apps SDK app with MCP server and widget UI."
+            data-i18n="recipes.chatgpt"
+          >
             ChatGPT app
           </button>
         </div>
@@ -145,7 +194,11 @@
 
     <footer class="footer">
       <span>Codex Universal Builder Skills</span>
-      <a href="https://github.com/Lincb522/codex-universal-builder-skills/blob/main/docs/usage.md">Usage guide</a>
+      <a
+        href="https://github.com/Lincb522/codex-universal-builder-skills/blob/main/docs/usage.md"
+        data-doc-link="usage"
+        data-i18n="footer.usage"
+      >Usage guide</a>
       <a href="https://github.com/Lincb522/codex-universal-builder-skills/blob/main/NOTICE.md">Notice</a>
     </footer>
 

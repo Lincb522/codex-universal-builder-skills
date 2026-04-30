@@ -57,6 +57,12 @@ a {
   backdrop-filter: blur(18px);
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -79,6 +85,24 @@ nav {
 nav a:hover,
 nav a:focus-visible {
   color: var(--ink);
+}
+
+.language-toggle {
+  min-width: 58px;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: rgba(142, 214, 255, 0.65);
 }
 
 .hero {
@@ -115,6 +139,12 @@ h1 {
   font-size: clamp(2.9rem, 6.35vw, 6.5rem);
   line-height: 0.95;
   letter-spacing: 0;
+}
+
+html[lang="zh-CN"] h1 {
+  max-width: 780px;
+  font-size: clamp(2.55rem, 5.2vw, 5.5rem);
+  line-height: 1.04;
 }
 
 h2 {
@@ -197,6 +227,7 @@ h3 {
 .hero-visual img {
   width: min(56vw, 240px);
   height: auto;
+  border-radius: 24px;
   filter: drop-shadow(0 28px 54px rgba(0, 0, 0, 0.42));
 }
 
@@ -279,7 +310,8 @@ code {
 }
 
 .module-grid p,
-.split p {
+.split p,
+.docs-grid small {
   color: var(--muted);
   line-height: 1.65;
 }
@@ -325,6 +357,36 @@ code {
   gap: 14px;
 }
 
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.docs-grid a {
+  display: grid;
+  gap: 10px;
+  min-height: 154px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.docs-grid a:hover,
+.docs-grid a:focus-visible {
+  border-color: rgba(142, 214, 255, 0.65);
+}
+
+.docs-grid span {
+  font-size: 1.08rem;
+  font-weight: 760;
+}
+
+.docs-grid small {
+  font-size: 0.95rem;
+}
+
 .recipe-list button {
   padding: 28px 22px;
   background: var(--panel);
@@ -356,8 +418,14 @@ code {
     gap: 14px;
   }
 
-  nav {
+  .topbar-actions {
     width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  nav {
+    min-width: 0;
     overflow-x: auto;
     padding-bottom: 4px;
   }
@@ -369,6 +437,7 @@ code {
 
   .metrics,
   .module-grid,
+  .docs-grid,
   .recipe-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -392,6 +461,11 @@ code {
     line-height: 0.96;
   }
 
+  html[lang="zh-CN"] h1 {
+    font-size: clamp(2.34rem, 11vw, 3rem);
+    line-height: 1.08;
+  }
+
   .lede {
     margin-bottom: 28px;
   }
@@ -402,6 +476,7 @@ code {
 
   .metrics,
   .module-grid,
+  .docs-grid,
   .recipe-list {
     grid-template-columns: 1fr;
   }

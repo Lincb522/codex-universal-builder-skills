@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 - 2026-05-01
+
+- Added bilingual English and Simplified Chinese documentation.
+- Added website language switching with localized prompt recipes and documentation links.
+- Replaced the original vector icon with an Image Gen generated project icon.
+
 ## 1.0.0 - 2026-05-01
 
 - Initial public universal skill pack.
