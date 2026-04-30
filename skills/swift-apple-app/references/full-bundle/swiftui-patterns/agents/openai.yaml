@@ -1,0 +1,6 @@
+interface:
+  display_name: "SwiftUI Patterns"
+  short_description: "SwiftUI architecture and state patterns"
+  default_prompt: "Use $swiftui-patterns to choose SwiftUI state and architecture patterns."
+policy:
+  allow_implicit_invocation: true

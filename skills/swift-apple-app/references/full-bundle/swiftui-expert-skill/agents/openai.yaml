@@ -1,0 +1,6 @@
+interface:
+  display_name: "SwiftUI Expert"
+  short_description: "Modern SwiftUI implementation guidance"
+  default_prompt: "Use $swiftui-expert-skill to implement or improve SwiftUI code."
+policy:
+  allow_implicit_invocation: true

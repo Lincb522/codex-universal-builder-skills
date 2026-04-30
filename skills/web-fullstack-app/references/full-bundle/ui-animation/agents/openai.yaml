@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI Animation"
+  short_description: "Motion timing, easing, interaction rules"
+  default_prompt: "Use $ui-animation to design or review purposeful UI motion."
+policy:
+  allow_implicit_invocation: true

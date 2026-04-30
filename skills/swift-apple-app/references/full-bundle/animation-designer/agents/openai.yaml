@@ -1,0 +1,6 @@
+interface:
+  display_name: "Animation Designer"
+  short_description: "Advanced motion and microinteraction design"
+  default_prompt: "Use $animation-designer to design polished UI animations and microinteractions."
+policy:
+  allow_implicit_invocation: true

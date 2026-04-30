@@ -1,0 +1,6 @@
+interface:
+  display_name: "Web Fullstack App"
+  short_description: "Downloaded frontend, backend, QA, security, and deploy web skill pack"
+  default_prompt: "Use $web-fullstack-app to design, build, verify, secure, and deploy a web application."
+policy:
+  allow_implicit_invocation: true

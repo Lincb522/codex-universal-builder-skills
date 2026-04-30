@@ -1,0 +1,6 @@
+interface:
+  display_name: "SwiftUI Performance Audit"
+  short_description: "Diagnose SwiftUI jank and update storms"
+  default_prompt: "Use $swiftui-performance-audit to diagnose SwiftUI performance issues."
+policy:
+  allow_implicit_invocation: true

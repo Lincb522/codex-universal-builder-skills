@@ -1,0 +1,6 @@
+interface:
+  display_name: "Anthropic Frontend Design"
+  short_description: "Distinctive web UI design guidance"
+  default_prompt: "Use $anthropic-frontend-design to design and implement a visually strong web interface."
+policy:
+  allow_implicit_invocation: true

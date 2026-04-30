@@ -1,0 +1,6 @@
+interface:
+  display_name: "Backend Development"
+  short_description: "Backend API, database, auth, security"
+  default_prompt: "Use $backend-development to design and implement backend APIs."
+policy:
+  allow_implicit_invocation: true

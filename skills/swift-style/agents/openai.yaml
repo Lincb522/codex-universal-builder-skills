@@ -1,0 +1,6 @@
+interface:
+  display_name: "Swift Style"
+  short_description: "Readable idiomatic Swift conventions"
+  default_prompt: "Use $swift-style to keep Swift code clean and idiomatic."
+policy:
+  allow_implicit_invocation: true

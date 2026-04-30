@@ -1,0 +1,6 @@
+interface:
+  display_name: "UIProMax"
+  short_description: "UI/UX design intelligence and audits"
+  default_prompt: "Use $ui-ux-pro-max to review UI/UX direction and design quality."
+policy:
+  allow_implicit_invocation: true

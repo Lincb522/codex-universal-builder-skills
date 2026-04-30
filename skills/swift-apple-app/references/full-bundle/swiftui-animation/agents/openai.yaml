@@ -1,0 +1,6 @@
+interface:
+  display_name: "SwiftUI Animation"
+  short_description: "Native SwiftUI transitions and motion"
+  default_prompt: "Use $swiftui-animation to implement polished SwiftUI motion."
+policy:
+  allow_implicit_invocation: true

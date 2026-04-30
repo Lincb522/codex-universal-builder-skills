@@ -1,0 +1,6 @@
+interface:
+  display_name: "iOS Swift Development"
+  short_description: "Native iOS architecture and services"
+  default_prompt: "Use $ios-swift-development to build native iOS Swift features."
+policy:
+  allow_implicit_invocation: true

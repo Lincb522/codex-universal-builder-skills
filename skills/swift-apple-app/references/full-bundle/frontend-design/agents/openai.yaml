@@ -1,0 +1,6 @@
+interface:
+  display_name: "Frontend Design"
+  short_description: "Design tokens, palettes, UI audits"
+  default_prompt: "Use $frontend-design to audit UI styles and generate production-grade design tokens."
+policy:
+  allow_implicit_invocation: true

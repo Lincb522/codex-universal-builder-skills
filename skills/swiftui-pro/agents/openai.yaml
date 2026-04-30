@@ -1,0 +1,6 @@
+interface:
+  display_name: "SwiftUI Pro Review"
+  short_description: "SwiftUI code review and best practices"
+  default_prompt: "Use $swiftui-pro to review SwiftUI code for quality and maintainability."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Swift Apple App"
+  short_description: "Universal Swift app skill for iOS and macOS"
+  default_prompt: "Use $swift-apple-app to create or improve a Swift app for iOS and macOS."
+policy:
+  allow_implicit_invocation: true
